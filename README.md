@@ -1,4 +1,6 @@
 # ClassesPix
+PARA segael-code-hunters
+
 profesor_prueba= 
 cuenta: jairoqc.02@gmail.com
 contraseña: 0205
