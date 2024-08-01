@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda - ClassesPix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logofinal.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Teachers", sans-serif;
+        }
+        body {
+            
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-image: url(./img/fondo_ayuda.png);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1{
+            color: white;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-back {
+            background-color: #4CAF50;
+        }
+        .btn-back:hover {
+            background-color: #45a049;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Guía de Uso - ClassesPix</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>Bienvenida a ClassesPix</h2>
+                <p>ClassesPix es una plataforma que ofrece una manera divertida y eficiente de gestionar tus cursos y estudiantes. A continuación, te explicamos las principales funcionalidades disponibles.</p>
+            </section>
+
+            <section>
+                <h2>Roles</h2>
+                <p>Existen dos roles en la plataforma:</p>
+                <ul>
+                    <li><strong>Profesor:</strong> Puede crear cursos, agregar estudiantes mediante un código, y asignar puntos a los estudiantes. También puede gestionar los salones y ver las solicitudes de inscripción.</li>
+                    <li><strong>Alumno:</strong> Puede inscribirse en cursos mediante un código, esperar la aceptación en los cursos, y recibir puntos basados en criterios establecidos por el profesor.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Funciones para Profesores</h2>
+                <ul>
+                    <li><strong>Crear Curso:</strong> Puedes crear un nuevo curso proporcionando un nombre para el salón.</li>
+                    <li><strong>Agregar Estudiantes:</strong> Puedes agregar estudiantes al curso mediante un código de inscripción.</li>
+                    <li><strong>Asignar Puntos:</strong> Puedes asignar puntos a los estudiantes basados en participación, puntualidad, etc.</li>
+                    <li><strong>Ver Solicitudes:</strong> Puedes revisar y gestionar las solicitudes de inscripción de los alumnos.</li>
+                    <li><strong>Gestionar Salones:</strong> Puedes ver, editar y eliminar los cursos que has creado.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Funciones para Alumnos</h2>
+                <ul>
+                    <li><strong>Inscribirse en Cursos:</strong> Puedes inscribirte en cursos utilizando un código de salón proporcionado por el profesor.</li>
+                    <li><strong>Esperar Aceptación:</strong> Después de inscribirte, esperarás la aprobación del profesor para ser agregado al curso.</li>
+                    <li><strong>Recibir Puntos:</strong> Puedes recibir puntos por participación y otras actividades según el criterio del profesor.</li>
+                    <li><strong>Comprar Trajes:</strong> Usa tus puntos para comprar trajes y personalizar tu personaje virtual. Los trajes se muestran en la tienda de tu perfil.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Clasificación de Puntos</h2>
+                <p>Todos los puntos que ganes y los trajes que compres se pueden ver en la tabla de clasificación y en la sección de tu personaje en tu perfil.</p>
+            </section>
+
+            <section>
+                <h2>Tablas de la Base de Datos</h2>
+                <ul>
+                    <li><strong>alumnos:</strong> Contiene la información de los estudiantes, incluyendo el traje actual.</li>
+                    <li><strong>inscripciones:</strong> Registra las inscripciones de los alumnos en los cursos.</li>
+                    <li><strong>profesores:</strong> Guarda la información de los profesores.</li>
+                    <li><strong>puntos:</strong> Almacena los puntos asignados a los alumnos por los profesores.</li>
+                    <li><strong>salones:</strong> Define los cursos creados por los profesores, incluyendo el nombre y el código del salón.</li>
+                    <li><strong>solicitudes_inscripcion:</strong> Registra las solicitudes de inscripción de los alumnos a los cursos.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Clasificación de Puntos</h2>
+                <p>Los puntos que ganes se pueden ver en la tabla de clasificación. Esta tabla muestra la cantidad total de puntos obtenidos por cada alumno y permite ver tu progreso.</p>
+            </section>
+
+            <footer>
+                <a href="index.php" class="btn btn-back">Volver al Inicio</a>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

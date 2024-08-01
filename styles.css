@@ -1,0 +1,344 @@
+* {
+    font-family: "Teachers", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body, ul, li {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #000000;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 2px;
+    width: 50px;
+    height: auto;
+}
+
+.words-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #2e2e2e;
+    color: rgb(255, 255, 255);
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(39, 39, 39, 0.473); 
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none; 
+}
+
+.sidebar li {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    width: 100%;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.menu-button {
+    
+    display: none;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #3f3f3f;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 430px) {
+    .words-logo {
+        display: none;
+    }
+}
+
+@media (max-width: 200px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar a {
+        padding: 20px; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+header{
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+    height: 70vh;
+    width: 100%;
+    color: white;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img/descargar.png);
+}
+
+
+.letter {
+    margin: 5px 0;
+}
+
+h1.letter {
+    font-size: 4.5vw; 
+}
+
+p.letter {
+    font-size: 3vw; 
+}
+/* Login*/
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding-top: 60px; 
+    background-image: url(./img/fondologin.png);
+    background-color: rgba(24, 24, 24, 0.507);
+    background-blend-mode: soft-light;
+}
+
+.login-form {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input,
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-form .error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.login-form p {
+    margin-top: 10px;
+}
+
+.login-form p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding-top: 60px; 
+    background-image: url(./img/fondoregister.png);
+    background-color: rgba(24, 24, 24, 0.507);
+    background-blend-mode: soft-light; 
+}
+
+.register-form {
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+}
+
+.register-form .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-form input,
+.register-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+.register-form .error {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.register-form .success {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.register-form p {
+    margin-top: 10px;
+}
+
+.register-form p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.register-form p a:hover {
+    text-decoration: underline;
+}
+
+
